@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Malagueta</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link type="image/png" sizes="96x96" rel="icon" href="assets/icon.png">
+    <style></style>
+  </head>
+  
+  <body>
+
+    <div id="secao1" class="bg-img">
+
+      <div id="descricao" class="meia-tela">
+        <h2>Nossa Missão</h2>
+        <p>Levar mais sabor para a mesa de todos os brasileiros</p>
+      </div>
+
+      <div id="inscrever" class="meia-tela">
+        <form action="/" method="get" name="inscrever" id="form-inscrever" class="overlay-form">
+
+          <p>Ajude a Malagueta a realizar mais!</p>
+
+          <input type="text" name="nome" id="inscrever-nome" placeholder="Seu nome" required>
+
+          <div class="mail-icon">
+            <input type="email" name="mail" id="inscrever-mail" placeholder="Seu melhor e-mail" required>
+          </div>
+
+          <textarea name="texto" id="texto-inscrever" placeholder="Como podemos levar mais sabor para a sua mesa?"></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+
+    </div>
+
+    <div id="navbar">
+      <img src="assets/icon.png" alt="Logo Malagueta" title="Malagueta ®">
+      <h1>Malagueta</h1>
+      <ul>
+        <li><a href="#secao1">Nossa Missão</a></li>
+        <li><a href="#secao2">Quem Somos</a></li>
+        <li><a href="#secao3">Envie Sua Opinião</a></li>
+      </ul>
+    </div>
+
+    <div id="secao2" class="bg-img">
+      <h2>Quem Somos</h2>
+      <p>
+        A Malagueta é uma empresa dedicada à comercialização de temperos de alta qualidade para dar um toque especial às suas refeições. Nós somos especialistas em temperos picantes, e estamos comprometidos em fornecer os melhores produtos e serviços aos nossos clientes.</p>
+      <p>
+        Aqui na Malagueta, acreditamos que a comida não precisa ser apenas saborosa, mas também emocionante. Com nossos temperos picantes, oferecemos a você a chance de experimentar uma explosão de sabores em cada mordida. Nós selecionamos cuidadosamente nossos ingredientes de fornecedores confiáveis para garantir que você receba os melhores produtos. Nós também nos esforçamos para oferecer uma ampla variedade de temperos picantes para atender a todas as preferências de paladar. Na SpiceMania, estamos apaixonados por dar vida às suas refeições e torná-las verdadeiramente memoráveis.
+      </p>
+    </div>
+
+    <div id="secao3" class="bg-img">
+
+      <form action="/" method="get" name="feedback" id="form-feedback" class="overlay-form">
+
+        <label for="input-nome">Nome: </label>
+        <input type="text" name="nome" id="input-nome" placeholder="Seu nome" required>
+        <br>
+        <label for="input-mail">E-mail: </label>
+        <input type="email" name="mail" id="input-mail" placeholder="Seu melhor e-mail" required>
+        <br>
+  
+        <label for="select-identidade">Você é: </label>
+        <select id="select-identidade" name="identidade">
+          <option value="0">Selecione...</option>
+          <optgroup label="Pessoa Física">
+              <option value="1">Usuário doméstico</option>
+              <option value="2">Profissional da área</option>
+              <option value="3">Revendedor</option>
+          </optgroup>
+          <optgroup label="Pessoa Jurídica">
+            <option value="4">Empresa compradora</option>
+            <option value="5">Empresa parceira</option>
+            <option value="6">Lojista</option>
+          </optgroup>
+      </select>
+        
+        <fieldset id="field-produtos">
+          <legend>Quais dos nossos produtos você utilizou?</legend>
+  
+          <ul>
+            <li>
+              <input type="checkbox" name="p-reino" id="check-p-reino">
+              <label for="check-p-reino">Pimenta do reino</label>
+            </li>
+            <li>
+              <input type="checkbox" name="p-branca" id="check-p-branca">
+              <label for="check-p-branca">Pimenta branca</label>
+            </li>
+            <li>
+              <input type="checkbox" name="p-preta" id="check-p-preta">
+              <label for="check-p-preta">Pimenta preta</label>
+            </li>
+            <li>
+              <input type="checkbox" name="p-rosa" id="check-p-rosa">
+              <label for="check-p-rosa">Pimenta rosa</label>
+            </li>
+          </ul>
+        </fieldset>
+  
+        <fieldset>
+          <legend>O que achou?</legend>
+        <!-- <label for="opiniao">O que achou?</label> -->
+        <input type="radio" name="opiniao" id="radio-pessimo" value="1">
+        <label for="radio-pessimo">Péssimo</label>
+        <input type="radio" name="opiniao" id="radio-ruim" value="2">
+        <label for="radio-pessimo">Ruim</label>
+        <input type="radio" name="opiniao" id="radio-regular" value="3">
+        <label for="radio-pessimo">Regular</label>
+        <input type="radio" name="opiniao" id="radio-bom" value="4">
+        <label for="radio-pessimo">Bom</label>
+        <input type="radio" name="opiniao" id="radio-otimo" value="5">
+        <label for="radio-pessimo">Ótimo</label>
+        </fieldset>
+  
+        <label for="text-feedback">Escreva sua opinião aqui: </label>
+        <br>
+        <textarea name="texto" id="text-feedback" placeholder="Sua opinião"></textarea>
+        <br>
+        
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
+  
+      </form>
+
+    </div>
+
+  </body>
+
+</html>
